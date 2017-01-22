@@ -17,10 +17,10 @@
     padding: 50px 0 200px;
 }
 
-@media(min-width: 768px){
+@media(min-width: 950px){
   /*PCサイトの指示*/
   #container{
-    width: 100%;
+    width: 950px;
     background-color: #FF0000;
     display: block;
     justify-content: flex-start;
