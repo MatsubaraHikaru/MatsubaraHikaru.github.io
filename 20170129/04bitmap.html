@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bitmap createjs</title>
+    <title>bitmap preload createjs</title>
 </head>
 <body>
     <canvas id="canvasEl" width="1024" height="768"></canvas>
@@ -18,6 +18,11 @@
     function init(){
         // ステージを作成
         var stage = new createjs.Stage('canvasEl');
+
+        var tomato = new createjs.Bitmap('img/tomato.png');
+        stage.addChild(tomato);
+        tomato.x = 200;
+        tomato.y = 200;
 
 
 
