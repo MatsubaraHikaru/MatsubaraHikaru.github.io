@@ -53,6 +53,19 @@
               vitaminC.gotoAndPlay('stop');
             }
 
+            function viStop(){
+              vitaminC.gotoAndPlay('stop');
+              createjs.Tween.get(iron).call(irWalk).to({x:500},2000).call(irStop);
+            }
+            
+            //iron歩かせる
+            function irWalk(){
+              iron.gotoAndPlay('walk');
+            }
+            function irStop(){
+              iron.gotoAndPlay('stop');
+            }
+
 
             var irSprite = new createjs.SpriteSheet(ironSprite);
             var iron = new createjs.Sprite(irSprite,'stand');
