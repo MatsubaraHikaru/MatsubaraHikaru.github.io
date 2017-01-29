@@ -19,31 +19,32 @@
         // ステージを作成
         var stage = new createjs.Stage('canvasEl');
 
-        //画像の場所を配列に保存しておく
+        // 画像の場所を配列に保存しておく
         var manifest = ['img/tomato.png','img/greenPepper.png'];
-        //loadQueueクラスの呼び出し
+
+        // loadQueueクラスの呼び出し
         var loader = new createjs.LoadQueue();
-        //読み込み開始(配列を読み込み)
+
+        // 読み込み開始
         loader.loadManifest(manifest);
-        //読み込み完了
-        loader.addEventListener('complete');
+
+        // 読み込み完了
+        loader.addEventListener('complete',addStage);
+
 
         function addStage(){
-          console.log('have read');
+            console.log('読み込み完了！');
+
+            var tomato = new createjs.Bitmap(manifest[0]);
+            stage.addChild(tomato);
+            tomato.x = 200;
+            tomato.y = 200;
+
+            var greenPepper = new createjs.Bitmap(manifest[1]);
+            stage.addChild(greenPepper);
+            greenPepper.x = 400;
+            greenPepper.y = 300;
         }
-
-        var tomato = new createjs.Bitmap(manifest[0]);
-        stage.addChild(tomato);
-        tomato.x = 200;
-        tomato.y = 200;
-
-        var greenPepper = new createjs.Bitmap(manifest[1]);
-        stage.addChild(greenPepper);
-        greenPepper.x = 400;
-        greenPepper.y = 300;
-
-
-
 
 
         // requestAnimationFrameを使う
