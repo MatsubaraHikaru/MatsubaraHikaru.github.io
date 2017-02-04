@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>bitmap preload createjs</title>
+</head>
+<body>
+  <canvas id="canvasEl" width="1024" height="768"></canvas>
+
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script>
+
+  window.addEventListener('load',init);
+
+  function init(){
+    var stage = new createjs.Stage('canvasEl');
+
+    function addStage(){
+      console.log('have read');
+    };
+
+
+
+
+
+    createjs.Ticker.timingMode =
+    createjs.Ticker.RAF_SYNCHED;
+    createjs.Ticker.setFPS(30);
+
+    createjs.Ticker.addEventListener('tick',function(){
+      stage.update();
+    });
+  }
+
+
+
+
+  </script>
+
+</body>
+</html>
