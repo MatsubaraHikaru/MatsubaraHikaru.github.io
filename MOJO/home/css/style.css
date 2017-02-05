@@ -108,6 +108,12 @@ nav a:hover, nav a:active{
   margin-bottom: 20px;
 }
 
+@media (max-width:768px) {
+  .clearfix:after{
+    padding-bottom: 40px;
+  }
+}
+
 /*box01 photo*/
 #contents #box01{
   width: 480px;
