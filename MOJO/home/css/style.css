@@ -1,0 +1,281 @@
+/*css-HOME*/
+/*COMMON-------------------------------------*/
+body{
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	line-height: 1.8;
+  background-color: #000000;
+}
+.inner{
+  width: 960px;
+  margin: 0 auto;
+}
+a:link, a:visited{
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/*HEADER-------------------------------------*/
+header{
+  position: relative;
+  line-height: 0;
+}
+header #mainVisual img{
+  width: 100%;
+}
+
+
+/*NAV*/
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+}
+nav .inner{
+  display: flex;
+}
+header #logoFlag{
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+nav a:link, nav a:visited{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+nav .current a:link,nav .current a:visited{
+  color: #c00e53;
+}
+nav a:hover, nav a:active{
+  color: #c00e53;
+}
+
+
+/*CONTENTS-----------------------------------*/
+#contents{
+  background: #efefef url(../img/floralLeft.jpg) top;
+}
+.clearfix:after{
+  content: " ";
+  clear: both;
+  display: block;
+  padding-bottom: 100px;
+}
+#contents .box{
+  width: 240px;
+  height: 240px;
+  float: left;
+}
+#contents .txArea{
+  width: 180px;
+  height: 180px;
+  padding: 30px;
+}
+#contents h3{
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+/*box01 photo*/
+#contents #box01{
+  width: 480px;
+  height: 480px;
+  background: url(../img/ph_box01.jpg);
+}
+/*box02 photo*/
+#box02{
+  background: url(../img/ph_box02.jpg);
+}
+/*box03 NEWS*/
+#box03{
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+#box03 dl{
+}
+#box03 dt{
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+#box03 .hover{
+  width: 200px;
+  height: 200px;
+  background: rgba(192, 14, 83, 0.7);
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 14;
+  text-align: right;
+  color: #FFFFFF;
+  padding: ;
+  margin-left: 20px;
+  transform: translateY(-220px);
+  opacity: 0;
+}
+#box03 .hover:hover{
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+#box03 .hoverTx{
+  transform: translateY(40px);
+}
+#box03 .hoverTx:hover{
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+/*box04 CONCEPT*/
+#box04{
+  background-color: #000000;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+#box04 .hover{
+  width: 200px;
+  height: 200px;
+  background: rgba(192, 14, 83, 0.7);
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 14;
+  text-align: right;
+  color: #FFFFFF;
+  padding: ;
+  margin-left: 20px;
+  transform: translateY(-220px);
+  opacity: 0;
+}
+#box04 .hover:hover{
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+#box04 .hoverTx{
+  transform: translateY(40px);
+}
+#box04 .hoverTx:hover{
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+/*box05*/
+#contents #box05{
+  background: url(../img/ph_box05.jpg);
+}
+/*box06*/
+#contents #box06{
+  background-color: #c00e53;
+  font-family: "rift-soft", sans-serif;
+  color: #FFFFFF;
+}
+/*box07*/
+#contents #box07{
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+#box07 .hover{
+  width: 200px;
+  height: 200px;
+  background: rgba(192, 14, 83, 0.7);
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 14;
+  text-align: right;
+  color: #FFFFFF;
+  padding: ;
+  margin-left: 20px;
+  transform: translateY(-220px);
+  opacity: 0;
+}
+#box07 .hover:hover{
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+#box07 .hoverTx{
+  transform: translateY(40px);
+}
+#box07 .hoverTx:hover{
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+/*box08*/
+#contents #box08{
+  background: url(../img/ph_box08.jpg);
+}
+/*box09*/
+#contents #box09{
+  background-color: #c00e53;
+  font-family: "rift-soft", sans-serif;
+  color: #FFFFFF;
+}
+/*box10*/
+#contents #box10{
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+#box10 .hover{
+  width: 200px;
+  height: 200px;
+  background: rgba(192, 14, 83, 0.7);
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 14;
+  text-align: right;
+  color: #FFFFFF;
+  padding: ;
+  margin-left: 20px;
+  transform: translateY(-220px);
+  opacity: 0;
+}
+#box10 .hover:hover{
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+#box10 .hoverTx{
+  transform: translateY(40px);
+}
+#box10 .hoverTx:hover{
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+/*box11*/
+#contents #box11{
+  background: url(../img/ph_box11.jpg);
+}
+/*box12*/
+#contents #box12{
+  background-color: #FFFFFF;
+}
+/*box13*/
+#contents #box13{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+#contents #box13 img{
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+
+/*FOOTER-------------------------------------*/
+footer{
+  height: 40px;
+  font-family: "rift-soft", sans-serif;
+  font-size: 10px;
+  text-align: right;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding-top: 16px;
+}
