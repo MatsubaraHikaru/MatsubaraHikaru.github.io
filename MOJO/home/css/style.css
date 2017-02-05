@@ -69,6 +69,7 @@ nav a:hover, nav a:active{
 
 @media (max-width:768px) {
   nav{
+    height: 60px;
     position: fixed;
   }
   header #logoFlag img{
@@ -76,7 +77,8 @@ nav a:hover, nav a:active{
   }
   nav ul li{
     font-size: 20px;
-    margin-left: 30px;
+    margin-top: 26px;
+    margin-left: 20px;
   }
 }
 
@@ -118,7 +120,8 @@ nav a:hover, nav a:active{
 @media (max-width:768px) {
   #contents #box01{
     width: 100%;
-    background-size: cover;
+    height: auto;
+    background-size: contain;
   }
 }
 /*box02 photo*/
@@ -301,11 +304,17 @@ nav a:hover, nav a:active{
   #contents .box{
     width: 100%;
   }
+  #contents .txArea{
+    margin: 0 auto;
+  }
   #box02,
   #box05,
   #box08,
   #box11{
-    margin: 10px 0;
+    background-size: cover;
+  }
+  #box12{
+    display: none;
   }
   #contents .txArea{
     width: 80%;
