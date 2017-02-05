@@ -18,7 +18,6 @@ a:link, a:visited{
 @media (max-width:768px) {
   .inner{
     width: 90%;
-    height: auto;
   }
 }
 
@@ -30,7 +29,6 @@ header{
 header #mainVisual img{
   width: 100%;
 }
-
 
 /*NAV*/
 nav{
@@ -114,19 +112,20 @@ nav a:hover, nav a:active{
 #contents #box01{
   width: 480px;
   height: 480px;
-  background: url(../img/ph_box01.jpg) top no-repeat;
 }
 
 @media (max-width:768px) {
   #contents #box01{
     width: 100%;
     height: auto;
-    background-size: contain;
+    line-height: 0;
+  }
+  #box01 img{
+    width: 100%;
   }
 }
 /*box02 photo*/
 #box02{
-  background: url(../img/ph_box02.jpg) top no-repeat;
 }
 /*box03 NEWS*/
 #box03{
@@ -199,7 +198,6 @@ nav a:hover, nav a:active{
 }
 /*box05*/
 #contents #box05{
-  background: url(../img/ph_box05.jpg)top no-repeat;
 }
 /*box06*/
 #contents #box06{
@@ -240,7 +238,6 @@ nav a:hover, nav a:active{
 }
 /*box08*/
 #contents #box08{
-  background: url(../img/ph_box08.jpg)top no-repeat;
 }
 /*box09*/
 #contents #box09{
@@ -281,7 +278,6 @@ nav a:hover, nav a:active{
 }
 /*box11*/
 #contents #box11{
-  background: url(../img/ph_box11.jpg)top no-repeat;
 }
 /*box12*/
 #contents #box12{
@@ -311,7 +307,15 @@ nav a:hover, nav a:active{
   #box05,
   #box08,
   #box11{
-    background-size: cover;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+  }
+  #box02 img,
+  #box05 img,
+  #box08 img,
+  #box11 img{
+    width: 100%;
   }
   #box12{
     display: none;
