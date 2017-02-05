@@ -68,6 +68,9 @@ nav a:hover, nav a:active{
 }
 
 @media (max-width:768px) {
+  nav{
+    position: fixed;
+  }
   header #logoFlag img{
     height: 100px;
   }
