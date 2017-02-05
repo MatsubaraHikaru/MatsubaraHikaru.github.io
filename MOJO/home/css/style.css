@@ -15,6 +15,12 @@ a:link, a:visited{
   text-decoration: none;
 }
 
+@media (max-width:768px) {
+  .inner{
+    width: 90%;
+    height: auto;
+  }
+}
 
 /*HEADER-------------------------------------*/
 header{
@@ -61,6 +67,15 @@ nav a:hover, nav a:active{
   color: #c00e53;
 }
 
+@media (max-width:768px) {
+  header #logoFlag img{
+    height: 100px;
+  }
+  nav ul li{
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}
 
 /*CONTENTS-----------------------------------*/
 #contents{
@@ -89,15 +104,23 @@ nav a:hover, nav a:active{
   line-height: 1.8;
   margin-bottom: 20px;
 }
+
 /*box01 photo*/
 #contents #box01{
   width: 480px;
   height: 480px;
-  background: url(../img/ph_box01.jpg);
+  background: url(../img/ph_box01.jpg) top no-repeat;
+}
+
+@media (max-width:768px) {
+  #contents #box01{
+    width: 100%;
+    background-size: cover;
+  }
 }
 /*box02 photo*/
 #box02{
-  background: url(../img/ph_box02.jpg);
+  background: url(../img/ph_box02.jpg) top no-repeat;
 }
 /*box03 NEWS*/
 #box03{
@@ -170,7 +193,7 @@ nav a:hover, nav a:active{
 }
 /*box05*/
 #contents #box05{
-  background: url(../img/ph_box05.jpg);
+  background: url(../img/ph_box05.jpg)top no-repeat;
 }
 /*box06*/
 #contents #box06{
@@ -211,7 +234,7 @@ nav a:hover, nav a:active{
 }
 /*box08*/
 #contents #box08{
-  background: url(../img/ph_box08.jpg);
+  background: url(../img/ph_box08.jpg)top no-repeat;
 }
 /*box09*/
 #contents #box09{
@@ -252,7 +275,7 @@ nav a:hover, nav a:active{
 }
 /*box11*/
 #contents #box11{
-  background: url(../img/ph_box11.jpg);
+  background: url(../img/ph_box11.jpg)top no-repeat;
 }
 /*box12*/
 #contents #box12{
@@ -268,6 +291,27 @@ nav a:hover, nav a:active{
   cursor: pointer;
 }
 
+@media (max-width:768px) {
+  #contents{
+    text-align: center;
+  }
+  #contents .box{
+    width: 100%;
+  }
+  #box02,
+  #box05,
+  #box08,
+  #box11{
+    margin: 10px 0;
+  }
+  #contents .txArea{
+    width: 80%;
+  }
+  #contents .hover{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 
 /*FOOTER-------------------------------------*/
 footer{
@@ -278,4 +322,10 @@ footer{
   background-color: #000000;
   color: #FFFFFF;
   padding-top: 16px;
+}
+
+@media (max-width:768px) {
+  footer{
+    text-align: center;
+  }
 }
