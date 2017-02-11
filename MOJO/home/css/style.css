@@ -134,7 +134,7 @@ nav a:hover, nav a:active{
   }
   #contents .txArea{
     width: 80%;
-    padding: 30px 10%;
+    padding: 20px 10%;
   }
 }
 
@@ -206,7 +206,7 @@ nav a:hover, nav a:active{
 @media (max-width:768px) {
   #box03 .hover{
     width: 80%;
-    margin: 0 10%;
+    margin: 20px 10%;
   }
 }
 /*box04 CONCEPT*/
@@ -244,7 +244,7 @@ nav a:hover, nav a:active{
 @media (max-width:768px) {
   #box04 .hover{
     width: 80%;
-    margin: 0 10%;
+    margin: 20px 10%;
   }
 }
 /*box05*/
@@ -299,7 +299,7 @@ nav a:hover, nav a:active{
 @media (max-width:768px) {
   #box07 .hover{
     width: 80%;
-    margin: 0 10%;
+    margin: 20px 10%;
   }
 }
 /*box08*/
@@ -354,7 +354,7 @@ nav a:hover, nav a:active{
 @media (max-width:768px) {
   #box10 .hover{
     width: 80%;
-    margin: 0 10%;
+    margin: 20px 10%;
   }
 }
 /*box11*/
