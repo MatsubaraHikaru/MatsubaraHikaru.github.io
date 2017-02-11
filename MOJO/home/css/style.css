@@ -1,4 +1,5 @@
 /*css-HOME*/
+
 /*COMMON-------------------------------------*/
 body{
   font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -41,17 +42,18 @@ nav{
 nav .inner{
   display: flex;
 }
-header #logoFlag{
+nav #logoFlag{
 }
 nav ul{
   display: flex;
+  margin-top: 40px;
 }
 nav ul li{
   font-family: "rift-soft", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 1;
-  margin-top: 40px;
+
   margin-left: 60px;
 }
 nav a:link, nav a:visited{
@@ -67,16 +69,32 @@ nav a:hover, nav a:active{
 
 @media (max-width:768px) {
   nav{
-    height: 60px;
     position: fixed;
   }
-  header #logoFlag img{
-    height: 100px;
+  nav .inner{
+    justify-content: space-between;
+  }
+  nav #logoFlag img{
+    height: 120px;
+  }
+  nav #navMenu{
+    width: 50%;
+    text-align: center;
+  }
+  nav #toggle{
+    font-family: "rift-soft", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 30px;
+    text-align: right;
+  }
+  nav ul{
+    display: block;
   }
   nav ul li{
-    font-size: 16px;
-    margin-top: 26px;
-    margin-left: 16px;
+    padding: 20px;
+    background-color: #000000;
   }
 }
 
@@ -109,23 +127,7 @@ nav a:hover, nav a:active{
 }
 
 @media (max-width:768px) {
-  #contents{
-    text-align: center;
-  }
-  .clearfix:after{
-    padding-bottom: 40px;
-  }
-  #contents .box{
-    width: 100%;
-    height: 200px;
-  }
-  #contents .txArea{
-    height: 160px;
-    margin: 0 auto;
-  }
-  #contents h3{
-    font-size: 16px;
-  }
+
 }
 
 /*box01 photo*/
@@ -133,15 +135,14 @@ nav a:hover, nav a:active{
   width: 480px;
   height: 480px;
 }
-
 @media (max-width:768px) {
   #contents #box01{
-    width: 100%;
-    height: auto;
-    line-height: 0;
+    width: 240px;
+    height: 240px;
   }
-  #box01 img{
-    width: 100%;
+  #contents #box01 img{
+    width: 240px;
+    height: 240px;
   }
 }
 /*box02 photo*/
@@ -303,6 +304,11 @@ nav a:hover, nav a:active{
 #contents #box12{
   background-color: #FFFFFF;
 }
+@media (max-width:768px) {
+  #contents #box12{
+    display: none;
+  }
+}
 /*box13*/
 #contents #box13{
   background-color: #000000;
@@ -313,37 +319,6 @@ nav a:hover, nav a:active{
   cursor: pointer;
 }
 
-@media (max-width:768px) {
-  #box02,
-  #box05,
-  #box08,
-  #box11{
-    width: 100%;
-    height: auto;
-    line-height: 0;
-  }
-  #box02 img,
-  #box05 img,
-  #box08 img,
-  #box11 img{
-    width: 100%;
-  }
-  #box12{
-    display: none;
-  }
-  #contents .txArea{
-    width: 80%;
-  }
-  #contents .hover{
-    width: 90%;
-    height: 160px;
-    margin: 0 auto;
-    transform: translateY(-200px);
-  }
-    #contents .hoverTx:hover{
-      transform: translateY(-20px);
-    }
-}
 
 /*FOOTER-------------------------------------*/
 footer{
