@@ -126,6 +126,16 @@ nav a:hover, nav a:active{
 }
 
 @media (max-width:768px) {
+  .clearfix:after{
+    padding-bottom: 40px;
+  }
+  #contents .box{
+    width: 50%;
+  }
+  #contents .txArea{
+    width: 80%;
+    padding: 30px 10%;
+  }
 }
 
 /*box01 photo*/
@@ -135,15 +145,26 @@ nav a:hover, nav a:active{
 }
 @media (max-width:768px) {
   #contents #box01{
-    width: 240px;
+    width: 50%;
     height: 240px;
+    background: url(../img/ph_box01.jpg) center center;
+    background-size: cover;
   }
   #contents #box01 img{
-    width: 100%;
+    display: none;
   }
 }
 /*box02 photo*/
 #box02{
+}
+@media (max-width:768px){
+  #box02{
+    background: url(../img/ph_box02.jpg) center center;
+    background-size: cover;
+  }
+  #box02 img{
+    display: none;
+  }
 }
 /*box03 NEWS*/
 #box03{
@@ -182,6 +203,12 @@ nav a:hover, nav a:active{
   transition: all 0.3s ease-in-out;
   transform: translateY(0);
 }
+@media (max-width:768px) {
+  #box03 .hover{
+    width: 80%;
+    margin: 0 10%;
+  }
+}
 /*box04 CONCEPT*/
 #box04{
   background-color: #000000;
@@ -214,8 +241,23 @@ nav a:hover, nav a:active{
   transition: all 0.3s ease-in-out;
   transform: translateY(0);
 }
+@media (max-width:768px) {
+  #box04 .hover{
+    width: 80%;
+    margin: 0 10%;
+  }
+}
 /*box05*/
 #contents #box05{
+}
+@media (max-width:768px){
+  #box05{
+    background: url(../img/ph_box05.jpg) center center;
+    background-size: cover;
+  }
+  #box05 img{
+    display: none;
+  }
 }
 /*box06*/
 #contents #box06{
@@ -254,8 +296,23 @@ nav a:hover, nav a:active{
   transition: all 0.3s ease-in-out;
   transform: translateY(0);
 }
+@media (max-width:768px) {
+  #box07 .hover{
+    width: 80%;
+    margin: 0 10%;
+  }
+}
 /*box08*/
 #contents #box08{
+}
+@media (max-width:768px){
+  #box08{
+    background: url(../img/ph_box08.jpg) center center;
+    background-size: cover;
+  }
+  #box08 img{
+    display: none;
+  }
 }
 /*box09*/
 #contents #box09{
@@ -294,8 +351,23 @@ nav a:hover, nav a:active{
   transition: all 0.3s ease-in-out;
   transform: translateY(0);
 }
+@media (max-width:768px) {
+  #box10 .hover{
+    width: 80%;
+    margin: 0 10%;
+  }
+}
 /*box11*/
 #contents #box11{
+}
+@media (max-width:768px){
+  #box11{
+    background: url(../img/ph_box11.jpg) center center;
+    background-size: cover;
+  }
+  #box11 img{
+    display: none;
+  }
 }
 /*box12*/
 #contents #box12{
