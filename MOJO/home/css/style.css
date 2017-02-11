@@ -387,6 +387,11 @@ nav a:hover, nav a:active{
   margin: 0 20px 20px 0;
   cursor: pointer;
 }
+@media (max-width:768px) {
+  #contents #box13 img{
+    margin: 0 10px 10px 0;
+  }
+}
 
 
 /*FOOTER-------------------------------------*/
