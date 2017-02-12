@@ -16,31 +16,45 @@ a:link, a:visited{
   text-decoration: none;
 }
 
+@media (max-width:768px) {
+  body{
+    font-size: 11px;
+  }
+  .inner{
+    width: 90%;
+  }
+}
+
 
 /*HEADER-------------------------------------*/
 header{
 }
-
 
 /*NAV*/
 nav{
   width: 100%;
   height: 80px;
   background-color: #000000;
-  position: fixed;
+  position: absolute;
+  top: 0;
 }
 nav .inner{
   display: flex;
 }
+nav #logoFlag{
+}
+nav #menuButton{
+  display: none;
+}
 nav ul{
   display: flex;
+  margin-top: 40px;
 }
 nav ul li{
   font-family: "rift-soft", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 1;
-  margin-top: 40px;
   margin-left: 60px;
 }
 nav a:link, nav a:visited{
@@ -54,13 +68,48 @@ nav a:hover, nav a:active{
   color: #c00e53;
 }
 
+@media (max-width:768px) {
+  nav{
+    position: fixed;
+  }
+  nav .inner{
+    justify-content: space-between;
+  }
+  nav #logoFlag img{
+    height: 120px;
+  }
+  nav #navMenu{
+    width: 120px;
+    text-align: center;
+  }
+  nav #menuButton{
+    display: block;
+    width: 120px;
+    font-family: "rift-soft", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.6;
+    margin-top: 10px;
+    text-align: center;
+    border: solid 1px #FFFFFF;
+  }
+  nav ul{
+    display: block;
+    margin-top: 0;
+  }
+  nav ul li{
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 0;
+    background-color: #000000;
+  }
+}
 
 /*CONTENTS-----------------------------------*/
 #contents{
   background: url(../img/ph_bgConcept.jpg) left top no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
   padding: 220px 0 300px;
 }
 #contents section{
@@ -96,4 +145,10 @@ footer{
   background-color: #000000;
   color: #FFFFFF;
   padding-top: 16px;
+}
+
+@media (max-width:768px) {
+  footer{
+    text-align: center;
+  }
 }
