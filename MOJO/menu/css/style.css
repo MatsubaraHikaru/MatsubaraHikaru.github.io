@@ -131,7 +131,7 @@ nav a:active{
 
 /*CONTENTS-----------------------------------*/
 #contents{
-  background: url(../img/ph_bgMenu.jpg) center top no-repeat;
+  background: url(../img/ph_bgMenu.jpg) left top no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 220px 0 300px;
@@ -170,12 +170,11 @@ nav a:active{
   width: 940px;
 }
 #contents .products{
-  width: 180px;
+  width: 160px;
   height: 100px;
   float: left;
-  padding-top: 250px;
-  margin-left: 8px;
-  margin-bottom: 20px;
+  padding-top: 240px;
+  margin: 0 14px 20px;
 }
 #contents #juPink{
   background: url(../img/bottle_pink.png)left top no-repeat;
@@ -211,7 +210,7 @@ nav a:active{
   font-family: "rift-soft", sans-serif;
   font-size: 12px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 #contents .pink{
   color: #c00e53;
