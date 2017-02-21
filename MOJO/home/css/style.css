@@ -48,35 +48,46 @@ nav{
   top: 0;
 }
 nav .inner{
-  display: flex;
 }
 nav #logoFlag{
+  float: left;
+}
+nav #navMenu{
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 40px;
 }
 nav #menuButton{
   display: none;
 }
 #menuWrap{
-  display: block;
 }
 nav ul{
-  display: flex;
-  margin-top: 40px;
 }
 nav ul li{
-  font-family: "rift-soft", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1;
+  float: left;
   margin-left: 60px;
 }
-nav a:link, nav a:visited{
+nav #snsNav{
+  float: right;
+}
+nav #snsNav img{
+  margin-left: 20px;
+  cursor: pointer;
+}
+nav a:link,
+nav a:visited{
   color: #FFFFFF;
   text-decoration: none;
 }
-nav .current a:link,nav .current a:visited{
+nav .current a:link,
+nav .current a:visited{
   color: #c00e53;
 }
-nav a:hover, nav a:active{
+nav a:hover,
+nav a:active{
   color: #c00e53;
 }
 
@@ -85,41 +96,41 @@ nav a:hover, nav a:active{
     position: fixed;
   }
   nav .inner{
-    justify-content: space-between;
   }
   nav #logoFlag img{
     height: 120px;
   }
   nav #navMenu{
     width: 120px;
+    font-size: 20px;
     text-align: center;
+    float: right;
   }
   nav #menuButton{
     display: block;
     width: 90px;
-    font-family: "rift-soft", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 2.6;
-    margin: 10px 0;
-    text-align: center;
-    background: url(../img/burgerMenu.png)right center no-repeat;
-  }
-  nav #menuButton a:hover{
     color: #FFFFFF;
+    background: url(../img/burgerMenu.png)right center no-repeat;
+    margin-bottom: 20px;
+    cursor: pointer;
   }
   #menuWrap{
     display: none;
   }
   nav ul{
-    display: block;
-    margin-top: 0;
   }
   nav ul li{
-    font-size: 20px;
-    padding: 0 0 30px 0;
-    margin-left: 0;
+    width: 120px;
+    padding: 10px 0;
+    margin: 0;
     background-color: #000000;
+  }
+  nav #snsNav{
+    padding: 0;
+  }
+  nav #snsNav img{
+    padding: 10px 20px;
+    margin: 0;
   }
 }
 

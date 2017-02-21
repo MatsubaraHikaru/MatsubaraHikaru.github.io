@@ -2,59 +2,90 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIND US / MOJO JUICE BAR</title>
   <script src="https://use.typekit.net/gnh4kbq.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <div class="inner">
-        <h1 id="logoFlag"><img src="img/logo_flag.png" alt="MOJO juice bar" height="200"></h1>
-        <div id="navMenu">
-          <div id="menuButton"><a href="#">menu</a></div>
-          <ul>
-            <li><a href="../home/index.html">HOME</a></li>
-            <li><a href="../news/index.html">NEWS</a></li>
-            <li><a href="../concept/index.html">CONCEPT</a></li>
-            <li><a href="../menu/index.html">MENU</a></li>
-            <li class="current"><a href="../findus/index.html">FIND US</a></li>
-          </ul>
-        </div><!-- /#navMenu -->
-      </div>
-    </nav>
-  </header>
-
-<div id="contents">
-  <div class="inner">
-    <section>
-      <h2 id="pageTitle">MOJO JUICE BAR</h2>
-      <div id="contentsDetails">
-        <div id="addressTxt">
-          <h3>address</h3>
-          <p>&#12306;123-4567<br>
-          東京都千代田区神田駿河台4-6<br>
-          Tel: 03-1234-5678<br>
-          mail: mojo-happy@mojo.jp</p>
-          <p>OPEN &emsp;8:00am<br>
-          CLOSE&emsp;20:00pm</p>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <div class="inner clearfix">
+          <h1 id="logoFlag"><img src="img/logo_flag.png" alt="MOJO juice bar" height="200"></h1>
+          <div id="navMenu">
+            <div id="menuButton">MENU</div>
+            <div id="menuWrap">
+              <ul class="clearfix">
+                <li><a href="../home/index.html">HOME</a></li>
+                <li><a href="../news/index.html">NEWS</a></li>
+                <li><a href="../concept/index.html">CONCEPT</a></li>
+                <li><a href="../menu/index.html">MENU</a></li>
+                <li class="current"><a href="../findus/index.html">FIND US</a></li>
+                <li id="snsNav">
+                  <img src="img/facebook.png" alt="facebook">
+                  <img src="img/twitter.png" alt="twitter">
+                  <a href="https://www.instagram.com/mojo_juice_bar/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+                </li>
+              </ul>
+            </div><!-- /#menuWrap -->
+          </div><!-- /#navMenu -->
         </div>
-        <div id="addressMap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.0304036478645!2d139.76615532716127!3d35.69862478019011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6329eee7019cf0b!2z5b6h6Iy244OO5rC044K944Op44K344OG44Kj!5e0!3m2!1sja!2sjp!4v1486920048965" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </div><!-- /#contentsDetails -->
-    </section>
-  </div><!-- /#inner -->
-</div><!-- /#contents -->
+      </nav>
+    </header>
 
-<footer>
-  <div class="inner">
-    <p><small>&copy; 2017 MOJO JUICE BAR ALL RIGHTS RESERVED</small></p>
-  </div>
-</footer>
+    <div id="contents">
+    <div class="inner">
+      <section>
+        <h2 id="pageTitle">MOJO JUICE BAR</h2>
+        <div id="contentsDetails">
+          <div id="addressTxt">
+            <h3>address</h3>
+            <p>&#12306;123-4567<br>
+            東京都千代田区神田駿河台4-6<br>
+            Tel: 03-1234-5678<br>
+            mail: mojo-happy@mojo.jp</p>
+            <p>OPEN &emsp;8:00am<br>
+            CLOSE&emsp;20:00pm</p>
+          </div>
+          <div id="addressMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.0304036478645!2d139.76615532716127!3d35.69862478019011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6329eee7019cf0b!2z5b6h6Iy244OO5rC044K944Op44K344OG44Kj!5e0!3m2!1sja!2sjp!4v1486920048965" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div><!-- /#contentsDetails -->
+      </section>
+    </div><!-- /#inner -->
+    </div><!-- /#contents -->
+
+    <footer>
+    <div class="inner">
+      <p><small>&copy; 2017 MOJO JUICE BAR ALL RIGHTS RESERVED</small></p>
+    </div>
+    </footer>
+  </div><!-- /#wrapper -->
 
 </body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function(){
+    $('#menuButton').on('click',function(){
+      // console.log('click');
+      $('#menuWrap').slideToggle();
+    });
+    $(window).resize(function(){
+      var winW = $(window).width();
+      if (winW < 768) {
+        $('#menuWrap').css('display','none');
+      }else {
+        $('#menuWrap').css('display','block');
+      }
+    });
+  });
+</script>
+
+
 </html>
