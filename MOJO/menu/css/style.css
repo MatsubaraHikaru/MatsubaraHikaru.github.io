@@ -244,6 +244,7 @@ nav a:active{
   #contents .products{
     width: 42%;
     max-width: 100%;
+    margin: 0 5px 20px;
   }
 }
 
