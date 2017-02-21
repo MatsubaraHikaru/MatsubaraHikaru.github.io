@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOJO JUICE BAR</title>
   <script src="https://use.typekit.net/gnh4kbq.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,14 +22,16 @@
       <div class="inner">
         <h1 id="logoFlag"><img src="img/logo_flag.png" alt="MOJO juice bar" height="200"></h1>
         <div id="navMenu">
-          <div id="menuButton"><a href="#">menu</a></div>
-          <ul>
-            <li class="current"><a href="../home/index.html">HOME</a></li>
-            <li><a href="../news/index.html">NEWS</a></li>
-            <li><a href="../concept/index.html">CONCEPT</a></li>
-            <li><a href="../menu/index.html">MENU</a></li>
-            <li><a href="../findus/index.html">FIND US</a></li>
-          </ul>
+          <div id="menuButton"><a href="#">MENU</a></div>
+          <div id="menuWrap">
+            <ul>
+              <li class="current"><a href="../home/index.html">HOME</a></li>
+              <li><a href="../news/index.html">NEWS</a></li>
+              <li><a href="../concept/index.html">CONCEPT</a></li>
+              <li><a href="../menu/index.html">MENU</a></li>
+              <li><a href="../findus/index.html">FIND US</a></li>
+            </ul>
+          </div><!-- /#menuWrap -->
         </div><!-- /#navMenu -->
       </div>
     </nav>
@@ -37,10 +39,10 @@
 
   <div id="contents">
     <div class="inner clearfix">
-      <div id="box01" class="box">
+      <div id="box01" class="box ph">
         <img src="img/ph_box01.jpg" alt="">
       </div>
-      <div id="box02" class="box">
+      <div id="box02" class="box ph">
         <img src="img/ph_box02.jpg" alt="">
       </div>
       <a href="../news/index.html">
@@ -62,7 +64,7 @@
           </div>
         </div>
       </a>
-      <div id="box05" class="box">
+      <div id="box05" class="box ph">
         <img src="img/ph_box05.jpg" alt="">
       </div>
       <div id="box06" class="box">
@@ -78,7 +80,7 @@
           </div>
         </div>
       </a>
-      <div id="box08" class="box">
+      <div id="box08" class="box ph">
         <img src="img/ph_box08.jpg" alt="">
       </div>
       <div id="box09" class="box">
@@ -98,7 +100,7 @@
           </div>
         </div>
       </a>
-      <div id="box11" class="box">
+      <div id="box11" class="box ph">
         <img src="img/ph_box11.jpg" alt="">
       </div>
       <div id="box12" class="box"></div>
@@ -108,7 +110,7 @@
           <div id="snsLogo">
             <img src="img/facebook.png" alt="facebook">
             <img src="img/twitter.png" alt="twitter">
-            <img src="img/instagram.png" alt="instagram">
+            <a href="https://www.instagram.com/mojo_juice_bar/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
           </div>
           <p>新しい情報を更新しています。<br>
             フォローしてチェックして下さい。</p>
@@ -125,6 +127,26 @@
 </div><!-- /#wrapper -->
 
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+  $(function(){
+    $('#menuButton').on('click',function(){
+      // console.log('click');
+      $('#menuWrap').slideToggle();
+    });
+    $(window).resize(function(){
+      var winW = $(window).width();
+      console.log(winW);
+      if(winW < 768){
+        $('#menuWrap').css('display','none');
+      } else {
+        $('#menuWrap').css('display','block');
+      }
+    });
+  });
+</script>
 
 
 </html>

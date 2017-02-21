@@ -143,6 +143,7 @@ nav a:hover, nav a:active{
   margin-bottom: 20px;
 }
 #contents .price{
+  font-size: 14px;
 }
 /*menuDetails*/
 #contents .menuDetails{
@@ -150,32 +151,62 @@ nav a:hover, nav a:active{
 }
 #contents .products{
   width: 180px;
-  height: 110px;
+  height: 100px;
   float: left;
-  padding-top: 60px;
+  padding-top: 250px;
   margin-left: 8px;
   margin-bottom: 20px;
 }
-#contents .pink{
-  background: url(../img/drop_pink.png) no-repeat;
+#contents #juPink{
+  background: url(../img/bottle_pink.png)left top no-repeat;
 }
-#contents .orange{
-  background: url(../img/drop_orange.png) no-repeat;
+#contents #juOrange{
+  background: url(../img/bottle_orange.png)left top no-repeat;
 }
-#contents .yellow{
-  background: url(../img/drop_yellow.png) no-repeat;
+#contents #juYellow{
+  background: url(../img/bottle_yellow.png)left top no-repeat;
 }
-#contents .lime{
-  background: url(../img/drop_lime.png) no-repeat;
+#contents #juLime{
+  background: url(../img/bottle_lime.png)left top no-repeat;
 }
-#contents .green{
-  background: url(../img/drop_green.png) no-repeat;
+#contents #juGreen{
+  background: url(../img/bottle_green.png)left top no-repeat;
+}
+#contents #smPink{
+  background: url(../img/cup_pink.png)left top no-repeat;
+}
+#contents #smOrange{
+  background: url(../img/cup_orange.png)left top no-repeat;
+}
+#contents #smYellow{
+  background: url(../img/cup_yellow.png)left top no-repeat;
+}
+#contents #smLime{
+  background: url(../img/cup_lime.png)left top no-repeat;
+}
+#contents #smGreen{
+  background: url(../img/cup_green.png)left top no-repeat;
 }
 #contents h4{
   font-family: "rift-soft", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+#contents .pink{
+  color: #c00e53;
+}
+#contents .orange{
+  color: #f39a00;
+}
+#contents .yellow{
+  color: #ffe100;
+}
+#contents .lime{
+  color: #8fc31f;
+}
+#contents .green{
+  color: #008842;
 }
 #contents .menuDetails p{
   font-size: 10px;

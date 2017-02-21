@@ -39,23 +39,33 @@ nav{
   top: 0;
 }
 nav .inner{
-  display: flex;
 }
 nav #logoFlag{
+  float: left;
+}
+nav #navMenu{
+  font-family: "rift-soft", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
 }
 nav #menuButton{
   display: none;
 }
 nav ul{
-  display: flex;
   margin-top: 40px;
 }
 nav ul li{
-  font-family: "rift-soft", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1;
+  float: left;
   margin-left: 60px;
+}
+nav #snsNav{
+  float: right;
+  margin-left: auto;
+}
+nav #snsNav img{
+  margin-left: 20px;
+  cursor: pointer;
 }
 nav a:link, nav a:visited{
   color: #FFFFFF;
@@ -72,36 +82,38 @@ nav a:hover, nav a:active{
   nav{
   }
   nav .inner{
-    justify-content: space-between;
   }
   nav #logoFlag img{
     height: 120px;
   }
   nav #navMenu{
     width: 120px;
+    font-size: 20px;
     text-align: center;
+    float: right;
   }
   nav #menuButton{
     display: block;
-    width: 120px;
-    font-family: "rift-soft", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+    width: 90px;
     line-height: 2.6;
-    margin-top: 10px;
-    text-align: center;
-    border: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    background: url(../img/burgerMenu.png)right center no-repeat;
+    margin: 10px 0 0;
+    cursor: pointer;
   }
   nav ul{
-    display: block;
-    margin-top: 0;
+    margin-top: 10px;
   }
   nav ul li{
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 0;
+    width: 100px;
+    padding: 10px;
+    margin: 0;
     background-color: #000000;
   }
+    nav #snsNav img{
+      margin: 0;
+      padding: 10px 20px;
+    }
 }
 
 
@@ -188,6 +200,8 @@ nav a:hover, nav a:active{
   }
   #contents figure img{
     width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 }
 
