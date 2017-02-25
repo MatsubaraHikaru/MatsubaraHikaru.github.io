@@ -159,6 +159,12 @@ nav a:active{
   margin: 100px;
 }
 
+@media (max-width:768px) {
+  #contents{
+    height: 100%;
+  }
+}
+
 
 /*FOOTER-------------------------------------*/
 footer{
