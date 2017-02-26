@@ -161,9 +161,8 @@ nav a:active{
 
 @media (max-width:768px) {
   #contents{
-    background: url(../img/ph_bgConcept_sp.jpg)no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 100%;
+    /*background: url(../img/ph_bgConcept_sp.jpg)no-repeat;*/
   }
 }
 
