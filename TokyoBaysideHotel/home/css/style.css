@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+/*common------------------------------------*/
+body{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:12px;
+	line-height:1.5;
+}
+a:link,a:visited{
+	color:#1a1a1a;
+	text-decoration: none;
+}
+a:hover,a:active{
+	color:#CCCCCC;
+	text-decoration: underline;
+}
+.inner{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+
+/*header------------------------------------*/
+header{
+  background-color: #ffffff;
+  padding: 20px 0 0;
+}
+header section{
+  display: flex;
+}
+#siteTitle{
+  margin: 0 192px 50px 412px;
+}
+#mailLang{
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+#mailLang li a:link, #mailLang li a:visited{
+  color: #666666;
+}
+#mailLang li a:hover, #mailLang li a:active{
+  text-decoration: none;
+}
+#ask a{
+  padding-left: 20px;
+  background: url(../img/icon_mail.gif) no-repeat 0 0;
+  line-height: 1;
+}
+#lang a{
+  padding-left: 12px;
+  background: url(../img/icon_pulldown.gif) no-repeat 0 4px;
+  line-height: 1;
+}
+
+/*navigation*/
+header nav ul{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+header nav ul li{
+  padding-bottom: 4px;
+	border-bottom: solid 8px #FFFFFF;
+}
+header nav ul li span{
+  font-size: 10px;
+}
+header nav ul a:link, header nav ul a:visited{
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  font-size: 14px;
+}
+header nav ul a:hover, header nav ul a:active{
+  text-decoration: none;
+}
+header nav ul li:hover, header nav ul li:active{
+  border-bottom: solid 8px #30d5c8;
+}
+
+
+/*mainVisual--------------------------------*/
+#mainVisual{
+  height: 600px;
+  background: url(../img/ph_main.jpg);
+  background-size: cover;
+  position: relative;
+}
+#reservation{
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+}
+#reservationText{
+  width: 1000px;
+  margin: 0 auto;
+}
+#titleR{
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  font-size: 14px;
+  width: 1000px;
+  border-bottom: solid 1px #999999;
+  padding: 0 0 4px 8px;
+  margin-bottom: 8px;
+}
+#titleR span{
+  font-size: 10px;
+  margin-left: 15px;
+}
+#reservationDetail{
+  display: flex;
+  padding: 0 30px;
+}
+.selectTitle{
+  margin-left: 30px;
+}
+#reservationDetail select{
+  margin-left: 10px;
+	width: 80px;
+	height: 20px;
+	border-radius: 5px;
+	border: solid 1px #30d5c8;
+}
+#checkIn{
+  float: left;
+}
+
+/*search*/
+#search{
+  margin-left: 80px;
+}
+.searchButton a:link, .searchButton a:visited{
+  width: 140px;
+  height: 30px;
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  font-size: 12px;
+  text-align: center;
+  line-height: 2.4;
+  color: #ffffff;
+  background-color: #30d5c8;
+	border: solid 1px #30d5c8;
+  display: block;
+}
+.searchButton a:hover, .searchButton a:active{
+  color: #30d5c8;
+  background-color: #FFFFFF;
+	border: solid 1px #30d5c8;
+  text-decoration: none;
+}
+#cancel a:link, #cancel a:visited{
+  font-size: 10px;
+  color: #1a1a1a;
+}
+
+
+/*feature-----------------------------------*/
+#feature{
+  margin: 80px 0 100px;
+}
+#featureBd{
+	width: 1080px;
+	border-bottom: solid 2px #30d5c8;
+	margin-bottom: 20px;
+}
+#titleF{
+  transform: translateY(14px);
+}
+#titleF img{
+	background-color: #FFFFFF;
+	padding-right: 20px;
+}
+#featureContainer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#feature article{
+  width: 350px;
+  height: 300px;
+}
+.featureText{
+  color: #FFFFFF;
+  padding: 10px 14px;
+}
+.featureText h3{
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  font-size: 18px;
+}
+.viewMore{
+  text-align: right;
+  margin-top: 10px;
+}
+.viewMore a:link, .viewMore a:visited{
+  color: #FFFFFF;
+  line-height: 2;
+}
+.viewMore a:hover, .viewMore a:active{
+  text-decoration: none;
+}
+#feature01{
+  background: url(../img/ph_feature01.jpg);
+}
+#feature02{
+  background: url(../img/ph_feature02.jpg);
+}
+#feature03{
+  background: url(../img/ph_feature03.jpg);
+}
+#feature01Text{
+  background: rgba(255,158,140,.8);
+  position: absolute;
+  bottom: 0;
+  width: 322px;
+}
+#feature02Text, #feature03Text{
+  background: rgba(48,213,200,.8);
+  position: absolute;
+  bottom: 0;
+  width: 322px;
+}
+
+/*newsContainer-----------------------------*/
+#newsContainer{
+  margin-bottom: 100px;
+}
+#newsContainer .inner{
+  display: flex;
+  justify-content: space-between;
+}
+#news a:hover, #news a:active{
+  text-decoration: none;
+}
+
+/*news*/
+#newsBd{
+	width: 720px;
+	border-bottom: 2px solid #30d5c8;
+	margin-bottom: 20px;
+}
+#titleN{
+  transform: translateY(14px);
+}
+#titleN img{
+	background-color: #FFFFFF;
+	padding-right: 20px;
+}
+#news dl{
+  width: 700px;
+}
+#news dl dt{
+  border-bottom: dotted 1px #999999;
+  padding: 10px;
+  float: left;
+}
+#news dl dd{
+  border-bottom: dotted 1px #999999;
+  padding: 10px;
+}
+
+/*banner*/
+.banner{
+  width: 280px;
+  height: 40px;
+  color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.bannerTitle{
+  font-family: "ヒラギノ明朝 Pro W3", Hiragino Mincho Pro, "ＭＳ Ｐ明朝", MS PMincho, serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+#banner a:hover,#banner a:active{
+	text-decoration: none;
+}
+#banner01{
+  background: url(../img/ph_christmas.jpg);
+}
+#banner02{
+  background: url(../img/ph_wedding.jpg);
+}
+#banner03{
+  background-color: #30d5c8;
+}
+
+
+/*footer------------------------------------*/
+footer{
+  background-color: #999999;
+  color: #FFFFFF;
+  padding: 20px 0;
+}
+#footerContainer{
+  display: flex;
+  justify-content: space-between;
+}
+#footerContainer ul{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li a:link, footer ul li a:visited{
+  color: #FFFFFF;
+}
+#addressTitle{
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+#address p{
+  font-size: 10px;
+  line-height: 1.8;
+}
+#copy{
+  font-size: 10px;
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
