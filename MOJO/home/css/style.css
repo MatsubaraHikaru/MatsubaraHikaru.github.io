@@ -53,7 +53,7 @@ nav #logoFlag{
   float: left;
 }
 nav #navMenu{
-  font-family: "rift-soft", sans-serif;
+  font-family: "rift-soft", "Cabin Condensed", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 1;
