@@ -1,0 +1,172 @@
+/*LOVE LONDON*/
+
+/*COMMON--------------------------------------*/
+body{
+	font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-size: 11px;
+  font-weight: 200;
+	line-height: 1.8;
+}
+#wrapper{
+	width: 1440px;
+	margin: 0 auto;
+}
+
+
+/*PAGETOP-------------------------------------*/
+#pageTop{
+  height: 400px;
+  background-image: url(../img/ph_main.jpg);
+  background-size: cover;
+  text-align: center;
+  padding-top: 220px;
+}
+#pageTop h1{
+  margin-bottom: 60px;
+}
+.download{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+/*CONCEPT-------------------------------------*/
+#concept{
+  padding: 60px 0;
+  text-align: center;
+}
+#concept h3{
+  margin: 20px 0;
+}
+#concept p{
+  margin-top: 20px;
+}
+
+
+/*NEWS----------------------------------------*/
+#news{
+  height: 350px;
+  background-image: url(../img/ph_news.jpg);
+  background-size: cover;
+  padding-top: 50px;
+}
+h2{
+  font-family: "Arial Narrow";
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.bgSquare{
+  width: 220px;
+  height: 220px;
+  padding: 40px;
+  background: rgba(153,108, 51, .75);
+  color: #ffffff;
+  margin-left: 800px;
+}
+
+
+/*PLACES--------------------------------------*/
+#places{
+  background-color: #feecd2;
+  padding: 40px 0;
+}
+#places #mock1{
+  float: left;
+}
+#places #mock2{
+  float: right;
+}
+#places #placesText{
+  width: 840px;
+  margin: 0 auto;
+}
+#places h3{
+  margin-bottom: 20px;
+}
+#places #flag{
+  margin: 20px 0;
+}
+#places #placesMypage{
+  text-align: right;
+}
+
+
+/*CONTENTS----------------------------------- */
+#contents{
+  padding: 40px 0;
+}
+#contents #contentsTitle{
+  width: 840px;
+  margin: 0 auto;
+  display: flex;
+}
+#contents h2{
+  margin-right: 20px;
+}
+#contents #contentsDetail{
+  text-align: center;
+  margin: 0 auto;
+}
+#contentsUpper{
+  display: flex;
+}
+#contentsLawer{
+  display: flex;
+  margin-top: -60px;
+}
+#contents ul li{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  overflow: hidden;
+  border: solid 6px #b28850;
+  font-size: 40px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding-top: 100px;
+  margin: 0 80px;
+}
+#sightseeing{
+  background-image: url(../img/ph_sightseeing.jpg);
+}
+#fashion{
+  background-image: url(../img/ph_fashion.jpg);
+}
+#music{
+  background-image: url(../img/ph_music.jpg);
+}
+#art{
+  background-image: url(../img/ph_art.jpg);
+}
+#post{
+  background-image: url(../img/ph_posts.jpg);
+}
+
+
+/*NOW-----------------------------------------*/
+#now{
+  height: 350px;
+  background-image: url(../img/ph_now.jpg);
+  background-size: cover;
+  padding-top: 50px;
+}
+#now #nowIcon{
+  margin-top: 20px;
+}
+#now #nowIcon img{
+  margin-right: 10px;
+}
+
+
+/*FOOTER--------------------------------------*/
+footer{
+  padding: 50px 0;
+  text-align: center;
+}
+footer p{
+  margin-top: 20px;
+}
