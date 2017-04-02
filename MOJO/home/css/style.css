@@ -21,10 +21,6 @@ a:link, a:visited{
   display: block;
 }
 
-@font-face {
-  font-family: "rift-soft";
-  src: url(https://use.typekit.net/gnh4kbq.js);
-}
 @media (max-width:768px) {
   body{
     font-size: 11px;
